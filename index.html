@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body {
+      background-color: hsl(217, 54%, 11%);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      color: hsl(215, 51%, 70%);
+    }
+    #MainContainer {
+      
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      border-width: 0;
+      width: auto;
+      height: auto;
+      padding-top: 50px;
+      
+    }
+    #card {
+      background-color: hsl(216, 50%, 16%);
+      width: 350px;
+      height: auto;
+      border: 20px;
+      border-radius: 20px;
+      padding: 30px 30px 5px 30px;
+    }
+    #imgContainer{
+      width: auto;
+      height: auto;
+    }
+    
+    #photo {
+      width: 100%;
+      position: relative;
+      
+    }
+    h1{
+      color: hsl(0, 0%, 100%);
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    p{
+      color: hsl(215, 51%, 70%);
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-size: 18px;
+    }
+    #details{
+      position:relative;
+      display: flex;
+
+    }
+    #price{
+      text-align:  left;
+      width: 50%;
+      color: hsl(178, 100%, 50%);
+      display: flex;
+      align-items: center;
+    }
+    #daysLeft{
+      text-align:  right;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    img{
+      border-radius: 10px;
+    }
+    #createdBy{
+      padding-top: 20px;
+      padding-bottom: 20px;
+      display:flex;
+      align-items: center;
+    }
+    #splitter{
+      margin-top: 25px;
+      margin-bottom: 5px;
+      color: hsl(215, 51%, 70%);
+      opacity: 20%;
+    }
+    #ethereumIcon{
+      padding-right: 10px;
+    }
+    #clockIcon{
+      padding-right: 10px;
+    }
+    #creatorImage{
+      width: 40px;
+      height: 40px;
+      padding-right: 20px;
+      padding-left: 1px;
+      z-index: 1;
+      display:flex;
+    }
+    #imgPlaceholder{
+      background-color: white;
+      border-radius: 50%;
+      width: 43px;
+      height: 43px;
+      position:absolute;
+    }
+    .userProfilePic{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    
+  </style>
+</head>
+<body>
+<div id="MainContainer">
+  <div id="card">
+    <div id="imgContainer">
+      <img src="images/image-equilibrium.jpg" alt="" id="photo">
+      <div id="textContainer">
+        <div id="description">
+          <h1>Equilibrium #3429</h1>
+          <p>Our Equilibrium collection promotes balance and calm.</p>
+        </div>
+        <div id="details">
+          <div id="price">
+            <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg" id="ethereumIcon"><path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/></svg>
+            0.041 ETH</div>
+          <div id="daysLeft">
+            <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg" id="clockIcon"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/></svg>
+            3 days left</div>
+        </div>
+        <hr id="splitter">
+      </div>
+      <div id="createdBy">
+        <div id="imgPlaceholder" class="userProfilePic"></div>
+        <img src="images/image-avatar.png" class="userProfilePic" alt="" id="creatorImage">
+        Creation of Jules Wyverns</div>
+    </div>
+  </div>
+</div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Alvis Franks</a>.
+  </div>
+</body>
+</html>
